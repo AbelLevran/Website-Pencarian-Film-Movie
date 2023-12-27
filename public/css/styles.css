@@ -1,0 +1,132 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Menggunakan font Montserrat untuk seluruh body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Mengatur warna latar belakang */
+}
+
+/* Styling untuk bagian header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; /* Warna latar belakang header */
+  color: #fff;
+  padding: 10px 20px; /* Padding untuk header */
+}
+
+/* Styling untuk judul h1 */
+h1 {
+  text-align: center;
+  color: whitesmoke; /* Warna teks */
+  font-size: 60px; /* Ukuran font */
+}
+
+/* Styling untuk judul h2 */
+h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Container untuk film */
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom responsif */
+  grid-gap: 10px; /* Jarak antar elemen */
+}
+
+/* Styling untuk setiap elemen film */
+.movie {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff; /* Warna latar belakang elemen film */
+  border-radius: 5px; /* Sudut elemen film */
+}
+
+/* Styling untuk gambar film */
+.movie img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styling untuk navigasi */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling untuk daftar navigasi */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Posisi vertikal item */
+}
+
+/* Styling untuk setiap item daftar navigasi */
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Styling untuk item terakhir pada daftar navigasi */
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Styling untuk tautan pada daftar navigasi */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff; /* Border putih */
+  padding: 8px 12px; /* Padding tombol */
+  font-size: 18px; /* Ukuran font */
+}
+
+/* Hover effect pada tautan */
+nav ul li a:hover {
+  background-color: #4caf50;
+  color: #370000;
+}
+
+/* Styling untuk form pencarian */
+form#search-form {
+  display: flex;
+  align-items: left;
+  margin: 0;
+}
+
+/* Styling untuk input dan tombol pada form pencarian */
+#search-form input[type="text"],
+#search-form button {
+  font-size: 18px; /* Ukuran font */
+  padding: 8px 12px; /* Padding untuk input dan tombol */
+  margin-right: 10px; /* Jarak antar elemen */
+}
+
+/* Styling untuk input teks pada form pencarian */
+#search-form input[type="text"] {
+  padding: 8px 20px; /* Atur lebar input */
+  width: 1248px; /* Lebar input */
+}
+
+/* Styling untuk tombol pada form pencarian */
+#search-form button {
+  padding: 8px 12px; /* Padding untuk tombol */
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect pada tombol */
+#search-form button:hover {
+  background-color: #4caf50;
+  color: #370000;
+}
